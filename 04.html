@@ -1,0 +1,20 @@
+<script>
+     let listaAntiga = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let listaNova = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const removeCarro = prompt(`Qual carro deseja remover da seguinte lista: ${listaAntiga.join(", ")}?`);
+
+    let lista;
+    let mensagem; 
+    let removido = listaNova.indexOf(removeCarro);
+        if (removido >= 0) {
+            lista = listaNova.splice(removido, 1)
+            document.write(`A lista antiga de SUV: `, listaAntiga.join(", "), `<br>`);
+            mensagem = "A nova lista após a remoção do veículo é: " + " " +  listaNova.join(", ");
+        }
+        else {
+           mensagem = `Esse veículo não está na lista.`;
+        }
+   
+    document.write(mensagem);
+
+</script>

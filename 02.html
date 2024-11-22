@@ -1,0 +1,9 @@
+<script>
+    const numero1 = Number(prompt(`Informe um numero`));
+    const numero2 = Number(prompt(`Informe o segundo numero`));
+    const numero3 = Number(prompt(`Informe o terceiro numero`));
+
+    let lista;
+    (numero1 > nuemro2 && numero2 > numero3) ? lista = [numero1, numero2,numero3] : (numero3 > numero2 && numero2 > numero1) ? lista = [ numero3, numero2, numero1] : (numero2 > numero3 && numero3 > numero1) ? lista = [numero2, numero3, numero1] : (numero2 > numero1 && numero1 > numero3) ? lista = [numero2, numero1, numero3] : (numero3 > numero1 > numero2) ? lista = [numero3, numero1, numero2] : lista = [numero1, numero3, numero2];
+    lista = lista.join("-");
+</script>
